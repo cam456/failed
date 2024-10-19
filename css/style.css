@@ -1,0 +1,22 @@
+:root{
+    --mauve: #302248;
+    --rosemauve: #613568;
+    --mauvepale: #886CB9;
+    --bleu: #AFBDEA;
+    --jaune: #FCECC9;
+}
+
+
+@font-face {
+    font-family: bagel;
+    src: url(../font/Bagel_Fat_One/BagelFatOne-Regular.ttf);
+  }
+
+@font-face {
+    font-family: barlowmedium;
+    src: url(../font/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+}
+@font-face {
+    font-family: barlowextrabold;
+    src: url(../font/Barlow_Semi_Condensed/BarlowSemiCondensed-ExtraBold.ttf);
+}
