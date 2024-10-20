@@ -1,5 +1,6 @@
 :root{
     --mauve: #302248;
+    --mauvenoir: #17013a;
     --rosemauve: #613568;
     --mauvepale: #886CB9;
     --bleu: #AFBDEA;
@@ -23,66 +24,168 @@
 }
 
 body{
-    font-family: barlowmedium;
     background-color: var(--jaune);
     margin: auto;
     margin-top: 10px;
 }
 
+/*----------------------- NAV -----------------------*/
+
+.nav{
+    margin-left: 10px ;
+    font-size: 20px;
+}
+
+.star1{
+    float: inline-start;
+    width: 25px;
+    display: flex;
+    margin-right: 2px;
+
+}
+.nom{
+    display: none;
+    font-family: barlowmedium;
+    color: var(--bleumauve);
+    float: inline-start;
+}
 
 .nav__list{
+    font-family: barlowmedium;
     float: inline-end;
     display: none;
     justify-content: flex-end;
     flex-direction: row;
     list-style-type: none;
-    text-decoration: none;
-    padding: 8px;
     margin: 0;
-}
-
-.nav__list :visited{
-    text-decoration: none;
-    color: none;
-}
-
-.nav__item{
-    transition: 0.3s;
-    color: var(--bleumauve);
-    
-}
-.nav__item :hover  {
-    text-decoration: none;
-    background-color: var(--bleumauve);
-    color: var(--jaune);
-    border-width: 3px;
-    border-style: solid;
-    border-color: var(--bleumauve);
-    border-radius: 10px;
-
-    transition: border-width 0.08s;
-    
 }
 
 
 .nav__a{
+    margin-left: 2px;
+    color: var(--bleumauve);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0);
     text-decoration: none;
     padding-right: 7px;
     padding-left: 7px;
     margin-top: auto;
+    transition: 0.3s;
+}
+
+.nav__a:hover  {
+   color: var(--jaune);
+   background-color: var(--bleumauve);
 }
 
 
 .menu-hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-decoration: none;
     color: var(--bleumauve);
-    display: flex;
-    justify-content: flex-end;
     padding-right: 7px;
     padding-left: 7px;
+    align-items: flex-end;
+    transition: 0.5s;
 }
 
-.menu-hamburger :visited{
+.menu-hamburger:visited{
     text-decoration: none;
     color: none;
+}
+
+.menu-hamburger span{
+    margin-bottom: 3px;
+    width: 20px;
+    height: 4px;
+    background-color: var(--bleumauve);
+    border-radius: 10px;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-hamburger.active span{
+    background-color: var(--mauvenoir);
+}
+
+.menu-hamburger.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-10px, 10px) rotate(45deg);
+}
+
+.menu-hamburger.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-10px, -10px) rotate(-45deg);
+}
+
+.menu-hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+
+/*---------- NAV BURGER ----------*/
+.nav__list_burger{
+    margin-top: 0px;
+    transform:translate(1700px, 4px) ;
+    display: flex;
+    font-family: barlowmedium;
+    text-align: end;
+    flex-direction: column;
+    list-style-type: none;
+    padding-right:10px ;
+    animation-timing-function: ease-in-out;
+    transition: transform 0.8s;
+    height: auto;
+    
+}
+
+.nav__a_burger{
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    color: var(--bleumauve);
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.nav__item_burger{
+    margin-top: 10px;
+}
+
+
+.nav__a_burger:hover{
+    color: var(--jaune);
+    background-color: var(--bleumauve);
+}
+
+.nav__list_burger.active{
+    transform:translate(0px, 4px) ;
+}
+
+
+/*---------- NAV BIG SCREEN ----------*/
+
+@media screen and (min-width: 768px) {
+
+    .menu-hamburger{
+        display: none;
+    }
+    
+    .nav__list{
+        display: flex;
+        color: var(--jaune);
+    }
+
+    .nom{
+        display: flex;
+    }
+
+    .nav__list_burger{
+        display: none;
+    }
 }
