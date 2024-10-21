@@ -59,7 +59,6 @@ body{
 }
 
 .nav__list{
-    backdrop-filter: blur(4px);
     font-family: barlowmedium;
     float: inline-end;
     display: none;
@@ -229,6 +228,18 @@ main{
     background-image: url(../images/Tittle.png);
 }
 
+@media screen and (min-width: 768px) {
+    .titre1{
+        height: 200px;
+        background-size: 600px;
+    }
+
+    .moi1{
+        height: 800px;
+        background-size: 600px;
+    }
+}  
+
 
 .moi1{
     display: flex;
@@ -285,3 +296,5 @@ main{
     color: var(--mauve);
     width: 350px;
 }
+
+
