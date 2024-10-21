@@ -238,3 +238,50 @@ main{
     background-size: 300px;
     background-image: url(../images/moi1.png);
 }
+
+.petittext{
+    font-family: barlowmedium;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    transform: translate(0% , -80%);
+}
+
+.petitelink {
+    text-decoration: none;
+    color: var(--jaune);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.petitelink:hover {
+    color: var(--mauvenoir);
+}
+
+.insidepetittext{
+    background-color: #886cb9b7;
+    width: 120px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.quoteartist{
+    transform: translate(0% , -40%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.insidequoteartist{
+    font-size: 13px;
+    font-family: barlowmedium;
+    color: var(--mauve);
+    width: 350px;
+}
