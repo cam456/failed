@@ -43,7 +43,6 @@ body{
 }
 
 .star1{
-    backdrop-filter: blur(4px);
     float: inline-start;
     width: 25px;
     display: flex;
@@ -52,10 +51,10 @@ body{
 
 }
 .nom{
-    backdrop-filter: blur(4px);
     font-family: barlowmedium;
     color: var(--bleumauve);
     float: inline-start;
+    backdrop-filter: blur(10px);
 }
 
 .nav__list{
@@ -69,8 +68,8 @@ body{
 }
 
 
+
 .nav__a{
-    backdrop-filter: blur(4px);
     margin-left: 2px;
     color: var(--bleumauve);
     border-width: 5px;
@@ -126,9 +125,11 @@ body{
 .menu-hamburger.active span:nth-child(1){
     top: 50%;
     transform: translate(-10px, 10px) rotate(45deg);
+    backdrop-filter: blur(10px);
 }
 
 .menu-hamburger.active span:nth-child(3){
+    backdrop-filter: blur(10px);
     top: 50%;
     transform: translate(-10px, -10px) rotate(-45deg);
 }
@@ -139,8 +140,8 @@ body{
 
 /*---------- NAV BURGER ----------*/
 .nav__list_burger{
-    backdrop-filter: blur(4px);
     margin-top: 0px;
+    background-image: linear-gradient(to right, #afbdea00 70%,#AFBDEA);
     transform:translate(1700px, 4px) ;
     display: flex;
     font-family: barlowmedium;
@@ -151,8 +152,8 @@ body{
     animation-timing-function: ease-in-out;
     transition: transform 0.8s;
     height: auto;
-    z-index: 10;
-    backdrop-filter: width;
+    z-index: 9999;
+    
 }
 
 .nav__a_burger{
@@ -178,6 +179,7 @@ body{
 
 .nav__list_burger.active{
     transform:translate(0px, 4px) ;
+    z-index: 9999;
 }
 
 
@@ -229,9 +231,6 @@ main{
     width: 90%;
     margin: 5px;
 }
-
-
- 
 
 
 .moi1{
@@ -316,46 +315,40 @@ main{
 
 @media screen and (min-width: 1600px) {
 
+    .side_titre_image1{
+        display: inline-block;
+        width: 100%;
+    }
+
     .titre1{
-        margin-top: -27vh;
+        width: 50%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .titreimage1{
-        max-width: 90vh;
-
+        margin-left: 48%;
+        margin-top: -12%;
     }
     
    
     
     .moi1{
-        transform: translate(10% , 0%);
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-left: auto;
-        margin-right: auto;
-      
+        width: 50%;
+        margin-top: -16%;
     }
     
     .moiimage1{
-        max-width: 65vh;
-        margin-top: -32vh;
+        max-width: 60%;
+        margin-top: auto;
     }
-
+    
     .petittext{
-        transform: translate(5% , -60%);
+        display: flex;
+        margin-left: 5%;
+        width: 100%;
     }
     
 
     .insidequoteartist{
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(75% , -250%);
-        
+        margin-left: 45%;
+        margin-top: -45%;
     }
 }
