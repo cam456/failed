@@ -282,6 +282,7 @@ main{
 
 .quoteartist{
     transform: translate(0% , -40%);
+    font-style: italic;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -352,3 +353,55 @@ main{
         margin-top: -45%;
     }
 }
+
+
+/*---------- A PROPOS ----------*/
+
+.apropos{
+    position: relative;
+    background-color: var(--bleu) ;
+    height: 150vh;
+}
+
+.titreapropos{
+    display: flex;
+    justify-content: center;
+    font-family:bagel ;
+    color: var(--jaune);
+    text-shadow: 2px 2px 3px rgba(16, 3, 20, 0.685);
+    font-size: 35px ;
+}
+
+.titrecontact{
+    display: flex;
+    justify-content: center;
+    color: var(--mauve);
+    font-size: 25px;
+    font-family: bagel;
+    z-index: 7;
+    margin-top: -28vh;
+    
+}
+
+.informationpropos{
+    font-family: barlowmedium;
+    z-index: 7;
+    
+}
+
+.apropoimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    z-index: 2 ;
+}
+
+.imgmoicontact{
+    width: 80%;
+
+}
+
+
