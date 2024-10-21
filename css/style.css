@@ -220,37 +220,37 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-position: 50%;
-    height: 100px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-image: url(../images/Tittle.png);
+    margin-bottom: 5vh;
+    
 }
 
-@media screen and (min-width: 768px) {
-    .titre1{
-        height: 200px;
-        background-size: 600px;
-    }
+.titreimage1{
+    width: 90%;
+    margin: 5px;
+}
 
-    .moi1{
-        height: 800px;
-        background-size: 600px;
-    }
-}  
+
+ 
 
 
 .moi1{
     display: flex;
-    height: 400px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-image: url(../images/moi1.png);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
 }
 
+.moiimage1{
+    max-width: 80%;
+    margin-top: auto;
+}
+
+
+
 .petittext{
+    font-size: 15px;
     font-family: barlowmedium;
     flex-direction: column;
     display: flex;
@@ -297,4 +297,65 @@ main{
     width: 350px;
 }
 
+@media screen and (min-width: 768px) {
 
+    .petittext{
+        font-size: 20px;
+    }
+    .insidepetittext{
+        transform: translate(-160% , 0%);
+        width: 150px;
+    }
+
+    .insidequoteartist{
+        font-size: 20px;
+        width: 600px;
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+
+    .titre1{
+        margin-top: -27vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .titreimage1{
+        max-width: 90vh;
+
+    }
+    
+   
+    
+    .moi1{
+        transform: translate(10% , 0%);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+    
+    .moiimage1{
+        max-width: 65vh;
+        margin-top: -32vh;
+    }
+
+    .petittext{
+        transform: translate(5% , -60%);
+    }
+    
+
+    .insidequoteartist{
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(75% , -250%);
+        
+    }
+}
