@@ -34,6 +34,7 @@ body{
 .nav{
     top: 0px; 
     padding-top: 10px;
+    width: 50px;
     position: fixed;
     width: 100%;
     font-size: 20px;
@@ -88,6 +89,7 @@ body{
 }
 
 
+
 .menu-hamburger{
     display: flex;
     flex-direction: column;
@@ -98,6 +100,7 @@ body{
     padding-left: 7px;
     align-items: flex-end;
     transition: 0.5s;
+    
 }
 
 .menu-hamburger:visited{
@@ -114,6 +117,8 @@ body{
     margin-top: 3px;
     display: flex;
     flex-direction: row;
+    transform:translate( 0px, 0px) ;
+    
 }
 
 .menu-hamburger.active span{
@@ -784,10 +789,12 @@ main{
     flex-direction: column;
     font-family: barlowmedium;
     transform: translate( 90px, 0px);
+    width: 300px;
 }
 
 
-/*--------- education --------*/
+/*--------- titre --------*/
+
 .titrecv{
     display: flex;
     flex-direction: column;
@@ -797,7 +804,7 @@ main{
     font-family: bagel;
     color: var(--bleu);
 }
-/*--------- titre --------*/
+
 .titrelangue{
     font-size: 20px;
     text-align: center;
@@ -861,14 +868,15 @@ main{
 }
 
 .educationcontainer{
-    margin-top: 4vh;
     color: var(--mauvenoir);
     background-color: var(--bleu);
     border-radius: 25px;
     width: 90%;
+    margin: auto;
     box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .education{
@@ -877,3 +885,5 @@ main{
     padding: 10px;
     margin: auto;
 }
+
+
