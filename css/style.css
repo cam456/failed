@@ -25,8 +25,7 @@
 
 body{
     background-color: var(--jaune);
-    margin: auto;
-    margin-top: 10px;
+    margin: 0;
     height: 10000px;
 }
 
@@ -64,6 +63,7 @@ body{
     flex-direction: row;
     list-style-type: none;
     margin: 0;
+    padding-right: 50px;
 }
 
 
@@ -212,26 +212,27 @@ body{
 /*---------- INTRODUCTION ----------*/
 
 main{
-    margin-top: 15%;
+    margin-top: 5%;
     position: relative;
 }
 
 
 
 .titre1{
-    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 
 .titreimg{
-    max-width: 350px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
   
 }
 
@@ -240,15 +241,17 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-  
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .moiimg{
-    max-width: 350px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     
 }
-
 
 
 .petittext{
@@ -258,6 +261,8 @@ main{
     flex-direction: row;
     justify-content: center;
     margin-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     transform: translate(0px, -40px);
 }
 
@@ -275,85 +280,138 @@ main{
     text-align: center;
     justify-content: center;
     background-color: #886cb9b7;
-    width: 120px;
     border-radius: 5px;
     padding: 10px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    
 }
 
 .quoteartist{
+    padding-left: 12px;
+    padding-right: 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     font-style: italic;
     margin-top: 0;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
 }
 
 .insidequoteartist{
     font-size: 13px;
     font-family: barlowmedium;
     color: var(--mauve);
-    width: 350px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
-/*@media screen and (min-width: 768px) {
-
-    .petittext{
-        font-size: 20px;
+@media screen and (min-width: 768px) {
+    
+    .moiimg{
+        max-width: 650px;
+        
     }
-    .insidepetittext{
-        transform: translate(-160% , 0%);
-        width: 150px;
+    .titreimg{
+        max-width: 1000px;
+      
+    }
+
+    .moi1{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .titre1{
+        margin-top: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .insidequoteartist{
-        font-size: 20px;
-        width: 600px;
-    }
-}
-
-
--@media screen and (min-width: 1600px) {
-
-    .side_titre_image1{
+        font-size: 26px;
         width: 100%;
+        max-width: 1000px;
+        height: auto;
     }
 
-    .side_titre_img {
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-    }
+    .quoteartist{
+        padding-left: 30px;
+        padding-right: 30px;
     
-    .titre1 {
-        margin-top: 0px;
-    }
-    
-    .moi1 {
         
     }
     
-    .titreimage1 img, .moiimage1 img {
-        max-width: 100%;/
-        height: auto; 
-    }  
-    }
     .petittext{
+        font-size: 30px;
+    }
+
+    .insidepetittext{
+        max-width: 300px;
+          
+    }
     
+    
+}
+
+
+@media screen and (min-width: 1600px) {
+    .side_titre_img {
+       display: flex; 
+       flex-direction: row-reverse;
+       justify-content: center;
+
+    }
+    
+    .titre1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start; 
+        margin-top: 0px; 
+    }
+    
+    .moiimg{
+        max-width: 900px;
+        
+    }
+    .titreimg{
+        max-width: 1500px;
+    }
+
+    .petittext{
+        font-size: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        transform: translate(-200px, -90px);
+    }
+
+
+    .insidepetittext{
+        max-width: 300px;
+          
+    }
+
+    .quoteartist{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         width: 100%;
     }
     
-    .quoteartist{
-        font-size: 500px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
+    .insidequoteartist{
+        transform: translate( -70px, -600px);
+        width: 50%;
+        height: 0px;
     }
-    
+
 }
---*/
+
+    
+
 
 /*---------- A PROPOS ----------*/
 
@@ -382,6 +440,11 @@ main{
 }
 
 /*--------- container img contact --------*/
+
+.contactcontainerfull{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .contactcontainer{
     display: flex;
     justify-content: center;
@@ -389,6 +452,9 @@ main{
     background-color: var(--jaune);
     background-size: contain;
     border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 
 }
 
@@ -398,14 +464,19 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 
 }
 
 .imgmoicontact{
-    height: 450px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-left: none;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 
 }
 
@@ -474,313 +545,170 @@ main{
 }
 
 
-/*---------- 
 @media screen and (min-width: 768px) {
     .titreapropos{
-        font-size: 60px;
-        
-    }
-    .imgmoicontact{
-        border-width: 300px;
-    }
-
-    .titrecontact{
-        font-size: 40px; 
+        font-size: 50px ;
     }
     
+    .contactcontainerfull{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contactcontainer{
+        max-width: 800px;
+       
+    
+    }
+    
+    .othercontactcontainer{
+        max-width: 800px;
+    
+    }
+    
+    .imgmoicontact{
+        max-width: 800px;
+    }
+
     .informationpropos{
         font-size: 15px;
     }
-    
+
+    .titrecontact{
+        color: var(--mauve);
+        font-size: 50px;
+        font-family: bagel;
+     
+    }
+
+    .moidescription{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .bonjour{
-        font-size: 17px;
+        font-size: 20px;
     }
-    
+   
     .textdescript{
-        font-size: 14px;
-    
+        font-size: 16px;
     }
-    
 }
 
 
 @media screen and (min-width: 1600px) {
 
-    .apropos{ 
-     
-    } 
-    .imgmoicontact{
-        
-        display: flex;
-        flex-direction: row;
-    } 
-
-    .othercontactcontainer{
-     
-       
+   
+    /*--------- container de tout a propos --------*/
+    .imagetextapropos{
+        flex-direction: row-reverse;
+        justify-content: center;
     }
+    
+    /*--------- titre --------*/
+    
 
     .titreapropos{
-        font-size: 80px;
-        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .titre1apropos{
+        margin-top: 0px;
+      font-size: 100px;
+      margin-bottom: 0px;
+     }
+    
+    /*--------- container img contact --------*/
+    
+    .contactcontainerfull{
+       padding-bottom: 60px;
+    }
+    .contactcontainer{
+        flex-direction: row;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+    
     }
     
-
+    .othercontactcontainer{
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    
+    }
+    
+    .imgmoicontact{
+        width: 100%;
+        max-width: 1500px;
+        height: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+         margin-bottom: -5px;
+    
+    }
     
     .titrecontact{
-        font-size: 37px;
+        padding-bottom: 60px;
+        font-size: 40px;
         font-family: bagel;
      
     }
     
-
+    
     .informationpropos{
         font-size: 20px;
-        display: block;
-        margin-top: 10vh;
-         
     }
     
-    .informationpropos:visited{
-        text-decoration: none;
-    }
     
     .info{
-        height: 60px;
-        
-      }
+        padding-top: 30px;
+        margin-top: 0px;
+    }
     
     .infoimg{
-        height: 35px;
-        width: auto;
-        
+        height: 25px;
     }
-
+    .contact{
+        font-size: 60px;
+    }
+    
+    .h2contact{
+        font-size: 25px;
+    
+    }
+    
+    /*--------- introduction de moi --------*/
     
     .moidescription{
-        height: contain;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
         
+        width: 50%;
+        
+    
+    }
+    
+    
+    .bonjour{
+        font-size: 30px;
+        font-family: barlowmedium;
+        color: var(--mauvenoir);
+    }
+    
+    .textdescript{
+        color: var(--mauvenoir);
+        font-size: 16px;
+        font-family: barlowmedium;
+    
     }
     
     
 }
-----------*/
+
 
 /*-------------- CV -------------*/
 
-.titrecv{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    font-size: 35px ;
-    font-family: bagel;
-    color: var(--bleu);
-}
-/*--------- titre --------*/
-.titrelangue{
-    font-size: 20px;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: barlowextrabold;
-    color: var(--mauvenoir);
-    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
-}
-
-.titreexperience{
-    font-size: 20px;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: barlowextrabold;
-    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
-    color: var(--mauvenoir);
-}
-
-
-/*--------- langues --------*/
-
-.langues{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    color: var(--mauvenoir);
-    font-family: barlowmedium;
-    background-color: var(--bleu);
-    border-radius: 25px;
-    width: 40%;
-    margin: auto;
-    font-size: 13px;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-}
-
-.anglais{
-    padding: 1%;
-    padding-right: 5%;
-    padding-left: 2%;
-
-}
-
-.francais{
-    
-    padding: 1%;
-    padding-right: 2%;
-    padding-left: 5%;
-}
-
-/*--------- experience --------*/
-
-.experiencecontainer{
-    color: var(--mauvenoir);
-    background-color: var(--bleu);
-    border-radius: 25px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-}
-
-.surete{
-    font-size: 10px;
-    position: relative;
-    padding: 10px;
-    margin: auto;
-}
-
-
-.droitnomsurete{
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.annesurete{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    font-family: barlowextrabold;
-    font-size: 15px;
-    margin-right: 12%;
-    margin-left: 5%;
-}
-
-.annemetro{
-    font-family: barlowextrabold;
-    font-size: 15px;
-    margin-right: 12%;
-    margin-left: 5%;
-}
-
-.annedesjardin{
-    font-family: barlowextrabold;
-    font-weight: 200;
-    font-size: 15px;
-    margin-right: 12%;
-    margin-left: 5%;
-}
-
-.nomsurete{
-    margin-right: 5px;
-    font-family: barlowmedium;
-}
-
-.nomposte{
-    font-family: barlowmedium;
-}
-
-.pointsurete{
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: barlowmedium;
-}
-
-
-/*--------- education --------*/
-
-.titreeducation{
-font-size: 20px;
-text-align: center;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: barlowextrabold;
-color: var(--mauvenoir);
-text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
-}
-
-.educationcontainer{
-    margin-top: 4vh;
-    color: var(--mauvenoir);
-    background-color: var(--bleu);
-    border-radius: 25px;
-    width: 90%;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.education{
-    font-size: 10px;
-    position: relative;
-    padding: 10px;
-    margin: auto;
-}
-
-
-
-
-/*--------- ipad screen --------*/
-@media screen and (min-width: 768px) {
-
-    .titrecv{
-        font-size: 60px;
-    }
-
-    .titrelangue{
-        margin-top: -10vh;
-        font-size: 35px;
-    }
-    
-    .langues{
-        font-size: 25px;
-    }
-
-    .titreexperience{
-        font-size: 35px;
-    }
-
-    .surete{
-        font-size: 20px;
-    }
-
-    .pointsurete{
-        font-size: 20px;
-    }
-
-    .annemetro{
-        font-size: 26px;
-    }
-
-    .annesurete{
-        font-size: 26px;
-    }
-
-    .annedesjardin{
-        font-size: 26px;
-    }
-
-
-}
