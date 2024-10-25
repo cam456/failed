@@ -712,3 +712,168 @@ main{
 
 /*-------------- CV -------------*/
 
+
+
+/*--------- experience --------*/
+
+.experiencecontainer{
+    color: var(--mauvenoir);
+    background-color: var(--bleu);
+    border-radius: 25px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.surete{
+    font-size: 10px;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.droitnomsurete{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.annesurete{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    font-family: barlowextrabold;
+    font-size: 15px;
+    margin-right: 12%;
+    margin-left: 5%;
+}
+
+.annemetro{
+    font-family: barlowextrabold;
+    font-size: 15px;
+    margin-right: 12%;
+    margin-left: 5%;
+}
+
+.annedesjardin{
+    font-family: barlowextrabold;
+    font-weight: 200;
+    font-size: 15px;
+    margin-right: 12%;
+    margin-left: 5%;
+}
+
+.nomsurete{
+    margin-right: 5px;
+    font-family: barlowmedium;
+}
+
+.nomposte{
+    font-family: barlowmedium;
+}
+
+.pointsurete{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    font-family: barlowmedium;
+    transform: translate( 90px, 0px);
+}
+
+
+/*--------- education --------*/
+.titrecv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    font-size: 35px ;
+    font-family: bagel;
+    color: var(--bleu);
+}
+/*--------- titre --------*/
+.titrelangue{
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: barlowextrabold;
+    color: var(--mauvenoir);
+    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
+}
+
+.titreexperience{
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: barlowextrabold;
+    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
+    color: var(--mauvenoir);
+}
+
+
+/*--------- langues --------*/
+
+.langues{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: var(--mauvenoir);
+    font-family: barlowmedium;
+    background-color: var(--bleu);
+    border-radius: 25px;
+    margin: auto;
+    font-size: 13px;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.anglais{
+    padding: 1%;
+    padding-right: 5%;
+    padding-left: 2%;
+
+}
+
+.titreeducation{
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: barlowextrabold;
+    color: var(--mauvenoir);
+    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
+}
+
+.educationcontainer{
+    margin-top: 4vh;
+    color: var(--mauvenoir);
+    background-color: var(--bleu);
+    border-radius: 25px;
+    width: 90%;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education{
+    font-size: 10px;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+}
