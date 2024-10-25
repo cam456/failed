@@ -226,27 +226,27 @@ main{
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-bottom: 5vh;
+    
     
 }
 
-.titreimage1{
-    width: 90%;
-    margin: 5px;
+.titreimg{
+    max-width: 350px;
+  
 }
-
 
 .moi1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   
 }
 
-.moiimage1{
-    max-width: 80%;
-    margin-top: auto;
+.moiimg{
+    max-width: 350px;
+    
 }
 
 
@@ -254,22 +254,16 @@ main{
 .petittext{
     font-size: 15px;
     font-family: barlowmedium;
-    flex-direction: column;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    transform: translate(0% , -80%);
+    margin-top: 0;
+    transform: translate(0px, -40px);
 }
 
 .petitelink {
     text-decoration: none;
-    color: var(--jaune);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    color: var(--jaune); 
 }
 
 .petitelink:hover {
@@ -277,6 +271,9 @@ main{
 }
 
 .insidepetittext{
+   
+    text-align: center;
+    justify-content: center;
     background-color: #886cb9b7;
     width: 120px;
     border-radius: 5px;
@@ -284,13 +281,13 @@ main{
 }
 
 .quoteartist{
-    transform: translate(0% , -40%);
-    font-style: italic;
-    flex-direction: column;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    font-style: italic;
+    margin-top: 0;
+    padding-bottom: 50px;
 }
 
 .insidequoteartist{
@@ -300,7 +297,7 @@ main{
     width: 350px;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
 
     .petittext{
         font-size: 20px;
@@ -317,7 +314,7 @@ main{
 }
 
 
-/*-----@media screen and (min-width: 1600px) {
+-@media screen and (min-width: 1600px) {
 
     .side_titre_image1{
         width: 100%;
