@@ -717,146 +717,85 @@ main{
 
 /*--------------------------- CV ---------------------------*/
 
-
-
 /*--------- experience --------*/
-
-.experiencecontainer {
-    overflow: hidden;
-    overflow: scroll;
-    color: var(--mauvenoir);
-    background-color: var(--bleu);
-    border-radius: 25px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    max-width: 400px;
-    height: auto;
-}
-
-.surete {
-    font-size: 2vw; /* Use viewport width for responsiveness */
-    position: relative;
-    padding: 10px;
-    margin: auto;
-    width: 100%;
-}
-
-.droitnomsurete {
-    margin: auto;
+.experiencecontainer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding-left: 1vh;
+    padding-right: 1vh ;
+    width: 100%;
+    
+}
+
+
+.experiencecontainer2{
+    background-color: var(--bleu);
+    background-size: contain;
+    padding-bottom: 2vh;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+}
+.droitnom{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.annesurete, .annemetro, .annedesjardin {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    font-family: barlowextrabold;
-    font-size: 3vw; 
-    margin-right: 12%;
-    margin-left: 5%;
-}
-
-.nomsurete, .nomposte {
-    font-family: barlowmedium;
-    font-size: 2.5vw;
-    margin-right: 5px;
-}
-
-.pointsurete {
-    font-size: 2vw; 
-    display: flex;
-    flex-direction: column;
-    font-family: barlowmedium;
-    transform: translate(90px, 0px);
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-}
-
-.experiencecontainer2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.nomwork{
     color: var(--mauvenoir);
-    background-color: var(--bleu);
-    border-radius: 25px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    max-width: 400px;
-    height: auto;
+    font-family: barlowmedium;
+    font-size: 1.5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
-.ecole1, .ecole2 {
-    display: flex;
-    flex-direction: column;
-    font-size: 2vw; /* Responsive font size */
-    position: relative;
-    padding: 10px;
-    margin: auto;
-}
-
-.anneecole, .anneecole2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
+.anner{
+    color: var(--mauvenoir);
     font-family: barlowextrabold;
-    font-size: 3vw; /* Responsive font size */
-    text-align: center;
-    padding-right: 10%; /* Adjust for responsiveness */
-    padding-top: 3vw; /* Responsive vertical spacing */
+    font-size: 2vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
-.nomecole {
-    margin-right: 5px;
+.nomposte{
+    color: var(--mauvenoir);
     font-family: barlowmedium;
-    font-size: 2.5vw; /* Responsive font size */
+    font-size: 1.5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
-.textecole, .textecole2 {
-    font-size: 2vw; /* Responsive font size */
-    display: flex;
-    flex-direction: column;
+
+.point{
+    color: var(--mauvenoir);
     font-family: barlowmedium;
-    width: 100%;
-    max-width: 250px; /* Adjust as needed */
-    height: auto;
+    font-size: 1.5vh;
+    padding-left: 7vh;
+    padding-right: 1vh;
 }
-
-.textecole{
-    transform: translate(90px, 0px);
-}
-
-.textecole2{
-    transform: translate(60px, 0px);
-}
-
 /*--------- titre --------*/
-.titreeducation{
-    font-size: 20px;
+
+
+
+
+.cvcv{
+    font-size: 5vh;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: barlowextrabold;
-    color: var(--mauvenoir);
-    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
-}
-
-.titrecv{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    font-size: 35px ;
     font-family: bagel;
     color: var(--bleu);
+    text-shadow: 1px 1px 2px rgba(16, 3, 20, 0.39);
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+    
 }
 
 .titrelangue{
@@ -910,17 +849,6 @@ main{
 
 }
 
-.educationcontainer{
-    color: var(--mauvenoir);
-    background-color: var(--bleu);
-    border-radius: 25px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
 
 .education{
     font-size: 10px;
@@ -933,32 +861,4 @@ main{
 /*-------------- IPADSCREEN --------------*/
 
 
-@media screen and (min-width: 768px) {
 
-/*---------- titre ----------*/
-
-    .titrecv{
-        font-size: 70px ;
-        
-    }
-    
-    .titrelangue{
-        font-size: 50px;
-    }
-    
-    .titreexperience{
-        font-size: 50px;
-    }
-    
-    .titreeducation{
-        font-size: 50px;
-    }
-/*---------- langues ----------*/    
-.langues{
-    font-size: 40px;
-    max-width: 500px;
-    height: auto;
-}
-
-
-}
