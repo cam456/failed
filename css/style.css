@@ -883,9 +883,10 @@ main{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+   
 }
 
-.logicielcontainer2{
+.logicielcontainer2 {
     background-color: var(--bleu);
     background-size: contain;
     padding-bottom: 2vh;
@@ -894,19 +895,79 @@ main{
     height: auto;
     border-radius: 25px;
     box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+
+    
+}
+
+.logiciebox {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+ 
 }
 
 .imglogiciel{
     width: 100%;
     height: auto;
-    max-width: 10vh;
+    max-width: 150px;
 }
 
-.logiciebox{
+.imgcontainers{
+    padding-top: 3vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    
 }
 
+
+/*--------- CV --------*/
+.moncvcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.moncv{
+    color: var(--mauvenoir);
+    font-family: bagel;
+    background-color: var(--bleu);
+    border-radius: 25px;
+    margin: auto;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    text-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+}
+.moncvtext{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.moncv :hover{
+    color: var(--jaune);
+}
+
+.hrefpdf{
+    color: var(--mauvenoir);
+    text-decoration: none;
+}
+
+.hrefpdf :visited{
+    text-decoration: none;
+}
 
 /*--------- titre --------*/
 
@@ -961,9 +1022,272 @@ main{
 }
 
 
+/*--------- IPAD VERSION --------*/
 
 
 
 
+@media screen and (min-width: 768px) {
+
+/*------- titre -------*/
+    
+    .cvcv{
+        font-size: 9vh ;
+      
+        
+    }
+    
+    .titrelangue{
+        font-size: 5vh;
+       
+    }
+    
+    .titreexperience{
+        font-size: 5vh;
+       
+    }
+    
+    .titreeducation{
+        font-size: 5vh;
+      
+    }
+
+    
+/*------- cv -------*/
+    
+    .moncv{
+        max-width: 400px;
+       
+    }
+    .moncvtext{
+        font-size: 7vh;
+    }
+
+/*------- logiciel -------*/
 
 
+.logicielcontainer2 {
+    max-width: 500px;   
+}
+.imglogiciel{
+    max-width: 500px;
+}
+
+/*------- education -------*/
+
+
+.educationcontainer2{
+    max-width: 500px;   
+}
+
+.anneecole{
+    
+    font-size: 2.3vh;
+
+}
+
+.nomecole{
+    font-size: 1.8vh; 
+    
+}
+
+.continueter{
+    font-size: 1.8vh;
+}
+
+.nomprogram{
+    font-size: 1.8vh;
+    padding-left: 8vh;
+   
+}
+
+.descriptionprogram{
+    font-size: 1.8vh;
+    padding-left: 8vh;
+}
+
+/*------- experience -------*/
+
+.experiencecontainer2{
+    max-width: 500px;
+}
+
+.nomwork{
+    font-size: 1.8vh;
+}
+
+.anner{
+    font-size: 2.3vh;
+}
+
+.nomposte{
+    font-size: 1.8vh;
+}
+
+
+.point{
+    font-size: 1.8vh;
+    padding-left: 7.5vh;
+}
+
+/*------- langues -------*/
+.langues{
+    font-size: 2.8vh;
+    max-width: 380px;
+}
+
+.anglais{
+    padding: 1%;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+
+
+}
+
+/*--------- DESKTOP VERSION --------*/
+
+@media screen and (min-width: 1600px) {
+
+.cv{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+        
+}
+
+.langueetexperience{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.containerpt2{
+    height: auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+/*------- titre -------*/
+    
+.cvcv{
+    font-size: 10vh ;
+}
+
+.titrelangue{
+    font-size: 3vh;
+   
+}
+
+.titreexperience{
+    font-size: 3vh;
+   
+}
+
+.titreeducation{
+    font-size: 3vh;
+  
+}
+
+
+/*------- cv -------*/
+
+.moncv{
+    max-width: 300px;
+   
+}
+.moncvtext{
+    font-size: 5vh;
+}
+
+/*------- logiciel -------*/
+
+
+.logicielcontainer2 {
+    max-width: 600px;   
+}
+.imglogiciel{
+    max-width: 500px;
+}
+
+.logiciebox{
+    display: flex;
+    flex-direction: row;
+}
+
+/*------- education -------*/
+
+
+.educationcontainer2{
+    max-width: 600px;   
+}
+
+.anneecole{
+
+    font-size: 2.3vh;
+
+}
+
+.nomecole{
+    font-size: 1.8vh; 
+
+}
+
+.continueter{
+    font-size: 1.8vh;
+}
+
+.nomprogram{
+    font-size: 1.8vh;
+    padding-left: 8vh;
+
+}
+
+.descriptionprogram{
+    font-size: 1.8vh;
+    padding-left: 8vh;
+}
+
+/*------- experience -------*/
+
+
+.experiencecontainer2{
+    width: 500px;
+    max-width: 800px;
+ 
+}
+
+.nomwork{
+font-size: 2vh;
+}
+
+.anner{
+font-size: 2.6vh;
+}
+
+.nomposte{
+font-size: 2vh;
+}
+
+
+.point{
+font-size: 2vh;
+padding-left: 8vh;
+}
+
+/*------- langues -------*/
+.langues{
+font-size: 2vh;
+max-width: 200px;
+}
+
+.anglais{
+padding: 1%;
+padding-right: 5%;
+padding-left: 2%;
+}
+
+}
