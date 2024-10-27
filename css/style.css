@@ -721,169 +721,120 @@ main{
 
 /*--------- experience --------*/
 
-.experiencecontainer{
+.experiencecontainer {
+    overflow: hidden;
+    overflow: scroll;
     color: var(--mauvenoir);
     background-color: var(--bleu);
     border-radius: 25px;
     width: 90%;
     margin: auto;
     box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    width: 100%;
     max-width: 400px;
     height: auto;
 }
 
-.surete{
-    font-size: 10px;
+.surete {
+    font-size: 2vw; /* Use viewport width for responsiveness */
     position: relative;
     padding: 10px;
     margin: auto;
+    width: 100%;
 }
 
-
-.droitnomsurete{
+.droitnomsurete {
     margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.annesurete{
+.annesurete, .annemetro, .annedesjardin {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: flex-end;
     font-family: barlowextrabold;
-    font-size: 15px;
+    font-size: 3vw; 
     margin-right: 12%;
     margin-left: 5%;
 }
 
-.annemetro{
-    font-family: barlowextrabold;
-    font-size: 15px;
-    margin-right: 12%;
-    margin-left: 5%;
-}
-
-.annedesjardin{
-    font-family: barlowextrabold;
-    font-weight: 200;
-    font-size: 15px;
-    margin-right: 12%;
-    margin-left: 5%;
-}
-
-.nomsurete{
+.nomsurete, .nomposte {
+    font-family: barlowmedium;
+    font-size: 2.5vw;
     margin-right: 5px;
-    font-family: barlowmedium;
 }
 
-.nomposte{
-    font-family: barlowmedium;
-}
-
-.pointsurete{
-    font-size: 12px;
+.pointsurete {
+    font-size: 2vw; 
     display: flex;
     flex-direction: column;
     font-family: barlowmedium;
-    transform: translate( 90px, 0px);
-    width: 300px;
-}
-
-/*--------- education --------*/
-.ecole1{
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-    position: relative;
-    padding: 10px;
-    margin: auto;
-}
-
-.anneecole{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    font-family: barlowextrabold;
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-    padding-right: 70px;
-    padding-top: 35px;
-}
-
-.anneecole2{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    font-family: barlowextrabold;
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-    padding-right: 25px;
-    padding-left: 12px;
-    padding-top: 35px;
-  
-}
-.nomecole{
-    margin-right: 5px;
-    font-family: barlowmedium;
-}
-
-.textecole{
-    font-size: 9px;
-    display: flex;
-    flex-direction: column;
-    font-family: barlowmedium;
-    transform: translate( 80px, -40px);
+    transform: translate(90px, 0px);
     width: 100%;
     max-width: 250px;
     height: auto;
 }
 
-.textecole2{
-    font-size: 9px;
-    display: flex;
-    flex-direction: row;
-
-    font-family: barlowmedium;
-    transform: translate( 70px, -40px);
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-
-.experiencecontainer2{
+.experiencecontainer2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: var(--mauvenoir);
-    
     background-color: var(--bleu);
     border-radius: 25px;
     width: 90%;
     margin: auto;
     box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    max-height: 300px;
-    width: 100%;
     max-width: 400px;
     height: auto;
 }
 
-.ecole2{
-    font-size: 10px;
+.ecole1, .ecole2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw; /* Responsive font size */
     position: relative;
     padding: 10px;
     margin: auto;
-    margin-top: -35px;
+}
+
+.anneecole, .anneecole2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: barlowextrabold;
+    font-size: 3vw; /* Responsive font size */
+    text-align: center;
+    padding-right: 10%; /* Adjust for responsiveness */
+    padding-top: 3vw; /* Responsive vertical spacing */
+}
+
+.nomecole {
+    margin-right: 5px;
+    font-family: barlowmedium;
+    font-size: 2.5vw; /* Responsive font size */
+}
+
+.textecole, .textecole2 {
+    font-size: 2vw; /* Responsive font size */
+    display: flex;
+    flex-direction: column;
+    font-family: barlowmedium;
+    width: 100%;
+    max-width: 250px; /* Adjust as needed */
+    height: auto;
+}
+
+.textecole{
+    transform: translate(90px, 0px);
+}
+
+.textecole2{
+    transform: translate(60px, 0px);
 }
 
 /*--------- titre --------*/
