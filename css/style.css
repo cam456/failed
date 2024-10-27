@@ -717,6 +717,42 @@ main{
 
 /*--------------------------- CV ---------------------------*/
 
+/*--------- langues --------*/
+
+.langues{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: var(--mauvenoir);
+    font-family: barlowmedium;
+    background-color: var(--bleu);
+    border-radius: 25px;
+    margin: auto;
+    font-size: 13px;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.anglais{
+    padding: 1%;
+    padding-right: 5%;
+    padding-left: 2%;
+
+}
+
+
+.education{
+    font-size: 10px;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+}
+
 /*--------- experience --------*/
 .experiencecontainer{
     display: flex;
@@ -838,6 +874,40 @@ main{
     padding-left: 7vh;
 }
 
+
+/*--------- logiciel --------*/
+
+.logicielcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.logicielcontainer2{
+    background-color: var(--bleu);
+    background-size: contain;
+    padding-bottom: 2vh;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+}
+
+.imglogiciel{
+    width: 100%;
+    height: auto;
+    max-width: 10vh;
+}
+
+.logiciebox{
+    display: flex;
+    flex-direction: row;
+}
+
+
 /*--------- titre --------*/
 
 
@@ -890,44 +960,10 @@ main{
     color: var(--mauvenoir);
 }
 
-/*--------- langues --------*/
-
-.langues{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    color: var(--mauvenoir);
-    font-family: barlowmedium;
-    background-color: var(--bleu);
-    border-radius: 25px;
-    margin: auto;
-    font-size: 13px;
-    box-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-}
-
-.anglais{
-    padding: 1%;
-    padding-right: 5%;
-    padding-left: 2%;
-
-}
 
 
-.education{
-    font-size: 10px;
-    position: relative;
-    padding: 10px;
-    margin: auto;
-}
 
 
-/*-------------- IPADSCREEN --------------*/
 
 
 
