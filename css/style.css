@@ -1291,3 +1291,70 @@ padding-left: 2%;
 }
 
 }
+
+
+/*------------ PROJETS -----------*/
+
+.encadrementprojets1{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-image: linear-gradient( var(--jaune)5%, var(--bleu)95%);
+}
+
+
+.projetprojet{
+
+    font-family:bagel ;
+    color: var(--jaune);
+    text-shadow: 2px 2px 3px rgba(16, 3, 20, 0.39);
+    font-size: 6vh ;
+    height: auto;
+    
+}
+
+.videosprojet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    min-height: 10vh;
+}
+
+.pg1video{
+    width: auto;
+    height: 100%;
+    max-height: 50vh;
+}
+
+.tiktok{
+  
+}
+/*------------ try1 -----------*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+  }
