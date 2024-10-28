@@ -1332,8 +1332,12 @@ padding-left: 2%;
     width: auto;
     height: 100%;
     max-height: 20vh;
+    
 }
-
+.videosprojet3{
+    background-color: #17013a;
+    
+}
 /*------------ try1 -----------*/
 
 .swiper-container {
